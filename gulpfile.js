@@ -115,7 +115,7 @@ const js = () => {
 		// "node_modules/jquery-nice-select/js/jquery.nice-select.min.js",
 
 		// swiper slider
-		// "node_modules/swiper/swiper-bundle.min.js",
+		"node_modules/swiper/swiper-bundle.min.js",
 	])
 		.pipe(sourcemaps.init())
 		.pipe(concat('libs.min.js'))

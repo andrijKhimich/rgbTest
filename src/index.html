@@ -17,20 +17,207 @@
 		<link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml" />
 		<!-- main styles -->
 		<link rel="stylesheet" href="./css/style.min.css" />
-		<title>Project | Name</title>
+		<title>RGB | TEST</title>
 	</head>
 
 	<body>
 		<div class="global-wrapper">
-			@@include("./html/_header.html")
 			<main class="main">
-				<svg class="icon-social">
-					<use xlink:href="img/sprite-svg/sprite.svg#favicon"></use>
-				</svg>
+				<div class="section gallery">
+					<div class="container">
+						<div class="gallery-row">
+							<div class="gallery__col">
+								<div class="gallery-card js-openPopup">
+									<div class="gallery-card__image">
+										<img src="./img/gallery1.jpg" alt="Программа" />
+									</div>
+									<div class="gallery-card__content">
+										<div class="gallery-card__text">
+											<h6>Программа</h6>
+											<p>
+												Мастер-классы от
+												<strong>звeзд украинского шоу-бизнеса</strong>
+											</p>
+										</div>
+										<div class="gallery-card__icon">
+											<img src="./img/mic.png" alt="mic" />
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="gallery__col">
+								<div class="gallery-card js-openPopup">
+									<div class="gallery-card__image">
+										<img src="./img/gallery2.jpg" alt="Развлечения" />
+									</div>
+									<div class="gallery-card__content">
+										<div class="gallery-card__text">
+											<h6>Развлечения</h6>
+											<p>
+												Бассейн с подогревом, собственный
+												<strong>надувной аквапарк, пляжный кинотеатр</strong>
+											</p>
+										</div>
+										<div class="gallery-card__icon">
+											<img src="./img/holiday.png" alt="holiday" />
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="gallery__col">
+								<div class="gallery-card js-openPopup">
+									<div class="gallery-card__image">
+										<img src="./img/gallery3.jpg" alt="Расположение" />
+									</div>
+									<div class="gallery-card__content">
+										<div class="gallery-card__text">
+											<h6>Расположение</h6>
+											<p>
+												1-я линия,
+												<strong>собственный песчаный пляж</strong> на берегу
+												Черного моря
+											</p>
+										</div>
+										<div class="gallery-card__icon">
+											<img src="./img/compas.png" alt="compas" />
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="gallery__col">
+								<div class="gallery-card js-openPopup">
+									<div class="gallery-card__image">
+										<img src="./img/gallery4.jpg" alt="Питание" />
+									</div>
+									<div class="gallery-card__content">
+										<div class="gallery-card__text">
+											<h6>Питание</h6>
+											<p>
+												<strong>Шведская линия </strong> с пятиразовым питанием
+												от шеф-повара
+											</p>
+										</div>
+										<div class="gallery-card__icon">
+											<img src="./img/sushi.png" alt="sushi" />
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="gallery__col">
+								<div class="gallery-card js-openPopup">
+									<div class="gallery-card__image">
+										<img src="./img/gallery5.jpg" alt="Проживание" />
+									</div>
+									<div class="gallery-card__content">
+										<div class="gallery-card__text">
+											<h6>Проживание</h6>
+											<p>
+												Современные кондиционированные
+												<strong>4-х местные номера</strong>
+											</p>
+										</div>
+										<div class="gallery-card__icon">
+											<img src="./img/home.png" alt="home" />
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="gallery__col">
+								<div class="gallery-card js-openPopup">
+									<div class="gallery-card__image">
+										<img src="./img/gallery6.jpg" alt="Безопасность" />
+									</div>
+									<div class="gallery-card__content">
+										<div class="gallery-card__text">
+											<h6>Безопасность</h6>
+											<p>
+												Охраняемая территория 24/7
+												<strong>(157 камер видеонаблюдения)</strong>
+											</p>
+										</div>
+										<div class="gallery-card__icon">
+											<img src="./img/button.png" alt="button" />
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</main>
-			@@include("./html/_footer.html")
 		</div>
-
+		<div class="overlay"></div>
+		<div class="popup">
+			<div class="popup-body">
+				<div class="popup-close"></div>
+				<div class="popup-row">
+					<div class="popup__gallery">
+						<!-- Slider main container -->
+						<div class="swiper popup-slider_top">
+							<!-- Additional required wrapper -->
+							<div class="swiper-wrapper">
+								<!-- Slides -->
+								<div class="swiper-slide">
+									<img src="./img/gallery5.jpg" alt="Slide" />
+								</div>
+								<div class="swiper-slide">
+									<img src="./img/gallery5-1.jpg" alt="Slide" />
+								</div>
+								<div class="swiper-slide">
+									<img src="./img/gallery5-2.jpg" alt="Slide" />
+								</div>
+								<div class="swiper-slide">
+									<img src="./img/gallery5-3.jpg" alt="Slide" />
+								</div>
+							</div>
+						</div>
+						<div thumbsSlider="" class="swiper mySwiper popup-slider_bottom">
+							<div class="swiper-wrapper">
+								<!-- Slides -->
+								<div class="swiper-slide">
+									<img src="./img/gallery5.jpg" alt="Slide" />
+								</div>
+								<div class="swiper-slide">
+									<img src="./img/gallery5-1.jpg" alt="Slide" />
+								</div>
+								<div class="swiper-slide">
+									<img src="./img/gallery5-2.jpg" alt="Slide" />
+								</div>
+								<div class="swiper-slide">
+									<img src="./img/gallery5-3.jpg" alt="Slide" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="popup__content">
+						<h2>Комфортное <span>проживание</span></h2>
+						<p><strong>Уютно и удобно</strong></p>
+						<ul>
+							<li>
+								Четырехместные <strong>комфортабельные номера </strong> с видом
+								на морское побережье
+							</li>
+							<li>
+								Четырехместные <strong>комфортабельные номера </strong> с видом
+								на морское побережье
+							</li>
+							<li>
+								Четырехместные <strong>комфортабельные номера </strong> с видом
+								на морское побережье
+							</li>
+							<li>
+								Четырехместные <strong>комфортабельные номера </strong> с видом
+								на морское побережье
+							</li>
+							<li>
+								Четырехместные <strong>комфортабельные номера </strong> с видом
+								на морское побережье
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
 		<script src="./js/libs.min.js"></script>
 		<script src="./js/script.min.js"></script>
 	</body>

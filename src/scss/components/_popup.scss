@@ -1,0 +1,154 @@
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba($black, 0.8);
+	display: none;
+}
+.popup {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	transform: translate(-50%, -50%);
+	max-width: 1440px;
+	padding: 0 56px;
+	display: none;
+	@include d(992) {
+		top: 40px;
+		bottom: 40px;
+		transform: translate(-50%, 0);
+		padding: 0 20px;
+		overflow-x: auto;
+	}
+	&-body {
+		padding: 40px;
+		background-color: $white;
+		border-radius: 5px;
+		position: relative;
+		@include d(992) {
+			padding: 40px 20px;
+		}
+	}
+	&-row {
+		display: flex;
+		align-items: center;
+		@include d(992) {
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+	}
+	&-close {
+		width: 35px;
+		height: 37px;
+		position: absolute;
+		padding: 10px;
+		top: 5px;
+		right: 14px;
+		&::before,
+		&::after {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 10px;
+			width: 17px;
+			transform-origin: center;
+			height: 1px;
+			background-color: $black;
+		}
+		&::before {
+			transform: rotate(45deg);
+		}
+		&::after {
+			transform: rotate(-45deg);
+		}
+		@include d(768) {
+			top: 2px;
+			right: 5px;
+		}
+	}
+	&__gallery {
+		max-width: 57%;
+		flex: 0 0 710px;
+		@include d(992) {
+			max-width: 50%;
+			flex: 0 0 50%;
+			margin: 0 auto;
+			margin-bottom: 20px;
+		}
+		@include d(768) {
+			max-width: 100%;
+			flex: 0 0 100%;
+		}
+	}
+	&__content {
+		padding-left: 40px;
+		max-width: 400px;
+		color: $fontColor;
+		@include d(992) {
+			max-width: 100%;
+			padding-left: 0;
+		}
+		p {
+			font-size: 18px;
+			font-weight: 500;
+			@include d(768) {
+				font-size: 16px;
+			}
+		}
+		ul {
+			margin: 40px 0;
+			@include d(992) {
+				margin: 20px 0 0 0;
+			}
+			li {
+				position: relative;
+				padding-left: 26px;
+				&:not(:last-child) {
+					margin-bottom: 23px;
+				}
+				&::before {
+					content: '';
+					width: 10px;
+					height: 10px;
+					background-color: $primary;
+					position: absolute;
+					top: 4px;
+					left: 1px;
+					border-radius: 2px;
+				}
+			}
+		}
+	}
+	&-slider {
+		&_top {
+			margin-bottom: 20px;
+			@include d(768) {
+				margin-bottom: 10px;
+			}
+			.swiper-slide {
+				height: auto;
+				img {
+					height: 100%;
+					object-fit: cover;
+				}
+			}
+		}
+		&_bottom {
+			.swiper-slide {
+				height: auto;
+				border-radius: 4px;
+				overflow: hidden;
+				img {
+					height: 100%;
+					object-fit: cover;
+				}
+				&.swiper-slide-active {
+					border: 4px solid $orange;
+				}
+			}
+		}
+	}
+}
