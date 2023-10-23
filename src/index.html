@@ -27,7 +27,7 @@
 					<div class="container">
 						<div class="gallery-row">
 							<div class="gallery__col">
-								<div class="gallery-card js-openPopup">
+								<div class="gallery-card js-openPopup" data-href="#popup1">
 									<div class="gallery-card__image">
 										<img src="./img/gallery1.jpg" alt="Программа" />
 									</div>
@@ -46,7 +46,7 @@
 								</div>
 							</div>
 							<div class="gallery__col">
-								<div class="gallery-card js-openPopup">
+								<div class="gallery-card js-openPopup" data-href="#popup2">
 									<div class="gallery-card__image">
 										<img src="./img/gallery2.jpg" alt="Развлечения" />
 									</div>
@@ -65,7 +65,7 @@
 								</div>
 							</div>
 							<div class="gallery__col">
-								<div class="gallery-card js-openPopup">
+								<div class="gallery-card js-openPopup" data-href="#popup3">
 									<div class="gallery-card__image">
 										<img src="./img/gallery3.jpg" alt="Расположение" />
 									</div>
@@ -85,7 +85,7 @@
 								</div>
 							</div>
 							<div class="gallery__col">
-								<div class="gallery-card js-openPopup">
+								<div class="gallery-card js-openPopup" data-href="#popup4">
 									<div class="gallery-card__image">
 										<img src="./img/gallery4.jpg" alt="Питание" />
 									</div>
@@ -104,7 +104,7 @@
 								</div>
 							</div>
 							<div class="gallery__col">
-								<div class="gallery-card js-openPopup">
+								<div class="gallery-card js-openPopup" data-href="#popup5">
 									<div class="gallery-card__image">
 										<img src="./img/gallery5.jpg" alt="Проживание" />
 									</div>
@@ -123,7 +123,7 @@
 								</div>
 							</div>
 							<div class="gallery__col">
-								<div class="gallery-card js-openPopup">
+								<div class="gallery-card js-openPopup" data-href="#popup6">
 									<div class="gallery-card__image">
 										<img src="./img/gallery6.jpg" alt="Безопасность" />
 									</div>
@@ -147,9 +147,9 @@
 			</main>
 		</div>
 		<div class="overlay"></div>
-		<div class="popup">
+		<div class="popup js-popup" id="popup1">
 			<div class="popup-body">
-				<div class="popup-close"></div>
+				<div class="popup-close js-closePopup"></div>
 				<div class="popup-row">
 					<div class="popup__gallery">
 						<!-- Slider main container -->
@@ -218,6 +218,7 @@
 				</div>
 			</div>
 		</div>
+
 		<script src="./js/libs.min.js"></script>
 		<script src="./js/script.min.js"></script>
 	</body>

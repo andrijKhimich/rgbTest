@@ -6,6 +6,9 @@
 	height: 100%;
 	background-color: rgba($black, 0.8);
 	display: none;
+	&.active {
+		display: block;
+	}
 }
 .popup {
 	position: fixed;
@@ -16,6 +19,9 @@
 	max-width: 1440px;
 	padding: 0 56px;
 	display: none;
+	&.active {
+		display: block;
+	}
 	@include d(992) {
 		top: 40px;
 		bottom: 40px;
@@ -47,6 +53,7 @@
 		padding: 10px;
 		top: 5px;
 		right: 14px;
+		cursor: pointer;
 		&::before,
 		&::after {
 			content: '';
@@ -141,6 +148,7 @@
 				height: auto;
 				border-radius: 4px;
 				overflow: hidden;
+				cursor: pointer;
 				img {
 					height: 100%;
 					object-fit: cover;
@@ -151,4 +159,9 @@
 			}
 		}
 	}
+}
+
+.popup-wrapper {
+	position: relative;
+	z-index: 100;
 }
